@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sin"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.ja010.sendproject.Sendingpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="온라인 상담 신청"
+            android:layout_marginBottom="20dp"
+            android:textColor="#000000"
+            android:textSize="25dp"
+            android:textStyle="bold"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="메일로 상담 및 무료 견적/실측 서비스를 제공해 드립니다."
+            android:textColor="#000000"
+            android:textSize="15dp">
+
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <TextView
+                android:id="@+id/tname1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:textColor="#000000"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/tname2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="#000000"
+                android:textSize="20dp">
+            </TextView>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border1"
+                android:layout_marginRight="30dp"
+                android:textColor="#000000"
+                android:textSize="30dp">
+            </EditText>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/name2"
+                android:layout_weight="1"
+                android:background="@drawable/border1"
+                android:textColor="#000000"
+                android:textSize="30dp">
+            </EditText>
+
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="휴대전화"
+            android:textColor="#000000"
+            android:textSize="20dp">
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/hp"
+            android:background="@drawable/border1"
+            android:textColor="#000000"
+            android:textSize="30dp">
+        </EditText>
+        <TextView
+            android:layout_marginTop="30dp"
+            android:id="@+id/temail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#000000"
+            android:textSize="20dp">
+        </TextView>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:background="@drawable/border1"
+            android:textColor="#000000"
+            android:textSize="30dp">
+        </EditText>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:onClick="onClick"
+                android:layout_marginLeft="150dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="상담 신청하기"
+                android:background="#45a5fa"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</LinearLayout>

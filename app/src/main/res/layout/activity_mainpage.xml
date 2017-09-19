@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:background="@drawable/main3"
+    tools:context="com.example.ja010.sendproject.mainpage">
+
+    <TextView
+        android:layout_marginTop="300dp"
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|"
+        android:textSize="40dp"
+        />
+    <TextView
+        android:id="@+id/text2"
+        android:textSize="55dp"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        />
+    <TextView
+        android:id="@+id/text3"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+
+        android:textColor="#ffffff"
+        />
+    <TextView
+        android:id="@+id/text4"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center"
+        android:background="@drawable/border"
+        android:onClick="clcl"
+        android:textSize="50dp"
+        android:text="컨설팅 신청하기" />
+
+</LinearLayout>
