@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
 
-    android:background="@drawable/main"
+    android:background="@drawable/main23"
     android:orientation="vertical"
     tools:context="com.example.ja010.sendproject.Primepage">
 

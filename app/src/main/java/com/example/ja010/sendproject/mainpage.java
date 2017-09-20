@@ -10,8 +10,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 public class mainpage extends AppCompatActivity {
-    TextView textmain1,textmain2,textmain3,textmain4;
-    EditText et;
+   TextView textmain1,textmain2,textmain3,textmain4;
+    Button btn_send;
     String password;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,7 @@ public class mainpage extends AppCompatActivity {
         textmain2 = (TextView)findViewById(R.id.text2);
         textmain3 = (TextView)findViewById(R.id.text3);
         textmain4 = (TextView)findViewById(R.id.text4);
+        btn_send = (Button)findViewById(R.id.btn_send);
         Intent i = getIntent();
         password = i.getStringExtra("password");
 
@@ -49,7 +50,12 @@ public class mainpage extends AppCompatActivity {
                 textmain4.setText("Bathroom should be the most beautiful room.");
             }
         },4000);
-
+        handler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                btn_send.setVisibility(View.VISIBLE);
+            }
+        },5000); // microphone is change v
     }
     public void clcl(View v){
         Intent i2 = new Intent(mainpage.this,Sendingpage.class);

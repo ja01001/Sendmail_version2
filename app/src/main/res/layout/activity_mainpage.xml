@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    android:background="@drawable/main3"
+    android:background="@drawable/main23"
     tools:context="com.example.ja010.sendproject.mainpage">
 
     <TextView
@@ -34,6 +34,7 @@
 
         android:textColor="#ffffff"
         />
+
     <TextView
         android:id="@+id/text4"
         android:textColor="#ffffff"
@@ -51,6 +52,7 @@
         android:layout_gravity="center"
         android:background="@drawable/border"
         android:onClick="clcl"
+        android:visibility="invisible"
         android:textSize="50dp"
         android:text="컨설팅 신청하기" />
 

@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/sin"
+    android:background="@drawable/sin1"
     android:orientation="horizontal"
     android:focusable="true"
     android:focusableInTouchMode="true"
     tools:context="com.example.ja010.sendproject.Sendingpage">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -103,6 +105,7 @@
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:id="@+id/hp"
             android:background="@drawable/border1"
             android:textColor="#000000"
@@ -122,6 +125,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/email"
+            android:inputType="textEmailAddress"
             android:background="@drawable/border1"
             android:textColor="#000000"
             android:textSize="30dp">
@@ -138,6 +142,7 @@
                 android:background="#45a5fa"
                 android:layout_centerInParent="true"/>
         </RelativeLayout>
+        <!-- marginLeft = 150dp를 줌-->
 
     </LinearLayout>
 </LinearLayout>
